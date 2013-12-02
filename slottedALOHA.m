@@ -95,7 +95,7 @@ function [efficiency, mean_wait_time, std_dev_wait_time] = slottedALOHA(p, num_n
             %fprintf('Std dev wait time at time %d: %d.\n', time_slot, std_dev_wait_time(calculation_iterator));
 
             % Compute the efficiency
-            efficiency(calculation_iterator) = sum(total_frames_transmitted)/(time_slot * num_nodes);
+            efficiency(calculation_iterator) = sum(total_frames_transmitted)/time_slot;
             %fprintf('Efficiency at time %d: %d.\n', time_slot, efficiency(calculation_iterator));
         end
     end

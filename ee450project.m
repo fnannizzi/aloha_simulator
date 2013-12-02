@@ -1,8 +1,8 @@
 % Number of nodes
 num_nodes = 10;
 % Number of time slots to run for
-num_time_slots = 1000;
-num_calculations = 100;
+num_time_slots = 500;
+num_calculations = 50;
 
 % Probability of transmitting p
 p = 0.025;
